@@ -1,0 +1,32 @@
+# Archivos de configuración local
+php_errors.log
+*.log
+
+# Archivos de backup
+*_backup.*
+*_antes_restauracion.*
+
+# Archivos temporales
+*.tmp
+*.temp
+
+# Archivos de datos generados dinámicamente
+resultados.json
+filtrados.json
+
+# Archivos de control de corrección
+eval_corregido.flag
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Archivos de configuración local
+config.local.php
+.env 

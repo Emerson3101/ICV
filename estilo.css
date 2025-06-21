@@ -1,0 +1,587 @@
+/**
+ * Estilos del Sistema ICV - ZOTGM
+ * 
+ * @author Emerson Salvador Plancarte Cerecedo
+ * @version 2025
+ * @description Estilos CSS optimizados para el sistema de Índice de Calidad de Voltaje
+ * 
+ * Características:
+ * - Diseño responsivo y moderno
+ * - Optimización para tablas grandes
+ * - Estilos para sistema de paginación
+ * - Animaciones y transiciones suaves
+ * - Compatibilidad con múltiples navegadores
+ */
+
+/* Estilos generales del sistema ICV */
+.dropdown-menu {
+  min-width: 200px;
+  /* ancho fijo para evitar que cambie */
+  overflow: hidden;
+  /* evita overflow visible */
+  padding: 0.25rem 0;
+  /* espacio arriba/abajo */
+  box-sizing: border-box;
+
+}
+
+.dropdown-menu .dropdown-item {
+  position: relative;
+  padding-left: 1.5rem;
+  color: #212529;
+  cursor: pointer;
+  transition: padding-left 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+  display: inline-block;
+  /* para que el ::after tenga el ancho del texto */
+}
+
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus {
+  background-color: #cff4fc !important;
+  color: inherit !important;
+  /* pequeño aumento para animar, pero sin mover mucho */
+  box-shadow: 0 4px 8px rgba(12, 76, 138, 0.15);
+  text-decoration: none;
+  outline: none;
+}
+
+.dropdown-menu .dropdown-item::after {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  height: 2px;
+  background: #055160;
+  width: 0;
+  transition: width 0.3s ease;
+  display: inline-block;
+}
+
+.dropdown-menu .dropdown-item:hover::after,
+.dropdown-menu .dropdown-item:focus::after {
+  width: 100%;
+  /* ancho igual al texto */
+}
+
+
+/* Ejemplo: Cambiar el color de fondo de la barra de navegación personalizada */
+.custom-navbar {
+  background-color: rgb(58, 148, 187);
+  /* Azul claro */
+}
+
+.custom-navbar2 {
+  background-color: rgb(35, 152, 65);
+  /* Azul claro */
+}
+
+/* Personalización de enlaces en el navbar */
+.navbar-nav .nav-link {
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #5d0dfd;
+  /* Color primario de Bootstrap */
+}
+
+/* Ajustes para el logotipo, si deseas modificar la imagen o el texto */
+.navbar-brand img {
+  border-radius: 50%;
+}
+
+/* Personalizar el botón de búsqueda */
+.input-group .form-control {
+  border-left: none;
+}
+
+/* Opcional: Agregar estilo a los dropdown-items */
+.dropdown-menu .dropdown-item:hover {
+  background-color: #033fe3;
+}
+
+.boton {
+  max-width: 200px !important;
+  width: 100% !important;
+}
+
+th .ordenar {
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  color: #033fe3;
+  text-decoration: underline;
+}
+
+.flecha {
+  margin-left: 5px;
+  font-size: 0.8em;
+  color: #555;
+}
+
+td.text-start {
+  text-align: left !important;
+}
+
+.evaluacion-col {
+  width: 200px;
+  /* Ajusta el tamaño de la columna Evaluación */
+  text-align: center;
+}
+
+/* Fade-in general para contenedores importantes */
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation 0.8s ease forwards;
+}
+
+@keyframes fadeInAnimation {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Animación para navbar-toggler (rotar icono hamburguesa) */
+.navbar-toggler-icon {
+  transition: transform 0.3s ease;
+}
+
+.navbar-toggler.collapsed .navbar-toggler-icon {
+  transform: rotate(0deg);
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+  transform: rotate(90deg);
+}
+
+/* Hover suave para enlaces de navbar */
+.nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0d6efd;
+  /* bootstrap primary */
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after {
+  width: 100%;
+}
+
+
+/* Animación modal fade (bootstrap ya la tiene, pero mejoramos suavidad) */
+.modal.fade .modal-dialog {
+  transform: translateY(-50px);
+  transition: transform 0.4s ease;
+}
+
+.modal.fade.show .modal-dialog {
+  transform: translateY(0);
+}
+
+@keyframes fadeInAlert {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Animación suave de deslizamiento hacia abajo con opacidad */
+@keyframes dropdownSlideFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-menu {
+  animation: dropdownSlideFadeIn 300ms ease forwards;
+  transform-origin: top right;
+}
+
+/* Estilos para el Dashboard */
+.dashboard-card {
+    transition: transform 0.2s ease-in-out;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.dashboard-card .card-body {
+    padding: 1.5rem;
+}
+
+.dashboard-card .bi {
+    opacity: 0.8;
+}
+
+/* Estilos para las gráficas */
+.chart-container {
+    position: relative;
+    height: 300px;
+    margin: 0 auto;
+}
+
+/* Estilos para filtros */
+.filtros-card {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border: 1px solid #dee2e6;
+}
+
+/* Animaciones para el dashboard */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dashboard-metrics {
+    animation: fadeInUp 0.5s ease-out;
+}
+
+/* Estilos para botones del dashboard */
+.btn-dashboard {
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-dashboard:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para métricas */
+.metric-value {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.metric-label {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Estilos para gráficas responsivas */
+@media (max-width: 768px) {
+    .chart-container {
+        height: 250px;
+    }
+    
+    .metric-value {
+        font-size: 2rem;
+    }
+    
+    .dashboard-card .card-body {
+        padding: 1rem;
+    }
+}
+
+/* Estilos para filtros responsivos */
+@media (max-width: 576px) {
+    .filtros-card .row > div {
+        margin-bottom: 1rem;
+    }
+    
+    .btn-dashboard {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Estilos para paginación y búsqueda */
+#controles-tabla {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+}
+
+#info-resultados .alert {
+    border-radius: 6px;
+    font-size: 0.875rem;
+}
+
+/* Optimización de tabla con scroll virtual */
+.table-responsive {
+    max-height: 70vh;
+    overflow-y: auto;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+}
+
+.table-responsive::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+/* Header sticky */
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    background: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Animaciones para filas */
+.table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.table tbody tr:hover {
+    background-color: rgba(0,123,255,0.05);
+}
+
+/* Estilos para controles de paginación */
+#navegacion-paginas .btn {
+    min-width: 40px;
+}
+
+#pagina-actual {
+    min-width: 60px;
+    font-weight: bold;
+}
+
+/* Estilos para búsqueda */
+#busqueda-tabla:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,0.25);
+}
+
+/* Indicador de carga para filas */
+.fila-cargando {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+/* Optimización para filas virtuales */
+.fila-virtual {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    font-style: italic;
+    color: #6c757d;
+}
+
+/* Responsive para controles */
+@media (max-width: 768px) {
+    #controles-tabla .col-md-6,
+    #controles-tabla .col-md-3 {
+        margin-bottom: 10px;
+    }
+    
+    #navegacion-paginas {
+        justify-content: center;
+    }
+}
+
+/* Estilos para tooltips de paginación */
+.paginacion-tooltip {
+    position: absolute;
+    background: rgba(0,0,0,0.8);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    z-index: 1030;
+    pointer-events: none;
+}
+
+/* Optimización de rendimiento */
+.table tbody tr {
+    contain: layout style paint;
+}
+
+/* Estilos para filtros activos */
+.filtro-activo {
+    background-color: #e3f2fd;
+    border-color: #2196f3;
+}
+
+/* Indicador de estado de carga */
+.estado-carga {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-right: 8px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Estilos para mensajes de estado */
+.mensaje-estado {
+    padding: 20px;
+    text-align: center;
+    color: #6c757d;
+    font-style: italic;
+}
+
+.mensaje-estado.vacio {
+    color: #dc3545;
+}
+
+.mensaje-estado.cargando {
+    color: #007bff;
+}
+
+/* Optimización para tablas grandes */
+.table-sm td, .table-sm th {
+    padding: 0.3rem;
+    font-size: 0.875rem;
+}
+
+/* Estilos para selección de filas */
+.fila-seleccionada {
+    background-color: rgba(0,123,255,0.1) !important;
+    border-left: 3px solid #007bff;
+}
+
+/* Estilos para ordenamiento */
+.ordenar {
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    display: inline-block;
+    padding-right: 15px;
+}
+
+.ordenar:hover {
+    color: #007bff;
+}
+
+.flecha {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 10px;
+    opacity: 0.5;
+}
+
+.ordenar.asc .flecha::after {
+    content: "▲";
+}
+
+.ordenar.desc .flecha::after {
+    content: "▼";
+}
+
+/* Estilos para exportación */
+.btn-exportar {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-exportar::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255,255,255,0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s, height 0.3s;
+}
+
+.btn-exportar:active::after {
+    transform: scale(0.95);
+}
+
+/* Estilos para contenedor scrolleable de gráficas */
+.chart-container-scrollable {
+  border: 1px solid #e9ecef;
+  border-radius: 0.375rem;
+  background-color: #f8f9fa;
+  position: relative;
+}
+
+.chart-container-scrollable::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chart-container-scrollable::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.chart-container-scrollable::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.chart-container-scrollable::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Ajustes específicos para la gráfica de nodos */
+.chart-container-scrollable .chart-container {
+  padding: 10px;
+  background-color: white;
+  border-radius: 0.25rem;
+}
+
+/* Responsive para el contenedor scrolleable */
+@media (max-width: 768px) {
+  .chart-container-scrollable {
+    height: 400px !important;
+  }
+  
+  .chart-container-scrollable .chart-container {
+    height: 600px !important;
+    min-height: 600px !important;
+  }
+}

@@ -1,0 +1,401 @@
+{
+    "02GMOPIC B -01    230          KV": {
+        "2025-04-18 13:39:42": {
+            "cuenta": true,
+            "nocuenta": false,
+            "descripcion": ""
+        },
+        "2025-04-19 23:07:06": {
+            "cuenta": true,
+            "nocuenta": false,
+            "descripcion": ""
+        },
+        "2025-05-05 11:05:22": {
+            "cuenta": true,
+            "nocuenta": false,
+            "descripcion": "Coincide con disparo múltiple en la RNT de la GRTOC."
+        },
+        "2025-05-24 17:59:38": {
+            "cuenta": true,
+            "nocuenta": false,
+            "descripcion": "Falla en QMD 4010."
+        }
+    },
+    "02GMOMZL B -01    230          KV": {
+        "2025-04-17 06:00:56": {
+            "cuenta": false,
+            "nocuenta": true,
+            "descripcion": ""
+        },
+        "2025-04-21 15:00:20": {
+            "cuenta": false,
+            "nocuenta": true,
+            "descripcion": ""
+        },
+        "2025-05-05 10:59:18": {
+            "cuenta": true,
+            "nocuenta": false,
+            "descripcion": "Coincide con disparo múltiple en la RNT de la GRTOC."
+        },
+        "2025-05-05 11:05:14": {
+            "cuenta": true,
+            "nocuenta": false,
+            "descripcion": "Coincide con disparo múltiple en la RNT de la GRTOC."
+        },
+        "2025-05-24 07:02:44": {
+            "cuenta": true,
+            "nocuenta": false,
+            "descripcion": "Falla en CAY 4135."
+        }
+    },
+    "02GMOYCP LT-93090 TCL          KV": {
+        "2025-04-05 16:20:36": {
+            "cuenta": true,
+            "nocuenta": false,
+            "descripcion": ""
+        },
+        "2025-04-12 17:08:26": {
+            "cuenta": true,
+            "nocuenta": false,
+            "descripcion": ""
+        },
+        "2025-04-12 17:08:28": {
+            "cuenta": true,
+            "nocuenta": false,
+            "descripcion": ""
+        },
+        "2025-04-12 17:08:30": {
+            "cuenta": false,
+            "nocuenta": true,
+            "descripcion": ""
+        },
+        "2025-05-06 01:59:08": {
+            "cuenta": true,
+            "nocuenta": false,
+            "descripcion": "01:59:13 h D TUV A1030 y D TUV A8330 interruptores de la unidad TUV U3 de la CTPALM. Generaba 180 MW."
+        }
+    },
+    "02GMOQMD B -01    115          KV": {
+        "2025-04-10 09:24:48": {
+            "cuenta": true,
+            "nocuenta": false,
+            "descripcion": ""
+        },
+        "2025-04-10 13:50:16": {
+            "cuenta": false,
+            "nocuenta": true,
+            "descripcion": ""
+        },
+        "2025-04-26 07:56:06": {
+            "cuenta": true,
+            "nocuenta": false,
+            "descripcion": ""
+        },
+        "2025-05-05 07:39:08": {
+            "cuenta": true,
+            "nocuenta": false,
+            "descripcion": "Falla del MOZ 4050."
+        },
+        "2025-05-05 11:05:14": {
+            "cuenta": true,
+            "nocuenta": false,
+            "descripcion": "Coincide con disparo múltiple en la RNT de la GRTOC."
+        },
+        "2025-05-06 07:59:34": {
+            "cuenta": true,
+            "nocuenta": false,
+            "descripcion": "Falla de CYC 4145."
+        },
+        "2025-05-10 16:19:26": {
+            "cuenta": true,
+            "nocuenta": false,
+            "descripcion": "Falla en MOZ 4030."
+        },
+        "2025-05-17 04:37:18": {
+            "cuenta": true,
+            "nocuenta": false,
+            "descripcion": "Falla en MOZ 4010."
+        },
+        "2025-05-17 05:18:32": {
+            "cuenta": true,
+            "nocuenta": false,
+            "descripcion": "Falla en MRA 4030."
+        },
+        "2025-05-18 06:41:38": {
+            "cuenta": true,
+            "nocuenta": false,
+            "descripcion": "Error de medición, no se encontró causa en relatorio, alarmas y eventos, ni maryana."
+        },
+        "2025-05-24 07:01:56": {
+            "cuenta": true,
+            "nocuenta": false,
+            "descripcion": "Falla en MOZ 4010."
+        },
+        "2025-06-01 14:08:31": {
+            "cuenta": false,
+            "nocuenta": true,
+            "descripcion": ""
+        }
+    },
+    "02GMOZAP B -01    115          KV": {
+        "2025-04-01 15:22:30": {
+            "cuenta": false,
+            "nocuenta": true,
+            "descripcion": ""
+        },
+        "2025-04-01 15:22:55": {
+            "cuenta": false,
+            "nocuenta": true,
+            "descripcion": ""
+        },
+        "2025-04-10 08:59:25": {
+            "cuenta": false,
+            "nocuenta": true,
+            "descripcion": ""
+        },
+        "2025-04-10 13:23:55": {
+            "cuenta": false,
+            "nocuenta": true,
+            "descripcion": ""
+        },
+        "2025-04-20 14:57:20": {
+            "cuenta": false,
+            "nocuenta": true,
+            "descripcion": ""
+        },
+        "2025-05-12 10:22:24": {
+            "cuenta": true,
+            "nocuenta": false,
+            "descripcion": "Falla en TEZ 5040."
+        },
+        "2025-05-23 22:24:35": {
+            "cuenta": true,
+            "nocuenta": false,
+            "descripcion": "Falla en TLZ 4040."
+        },
+        "2025-05-24 06:45:44": {
+            "cuenta": true,
+            "nocuenta": false,
+            "descripcion": "Disparo de LT PIC 73290 APC."
+        },
+        "2025-06-01 21:03:35": {
+            "cuenta": true,
+            "nocuenta": false,
+            "descripcion": "asdasda"
+        },
+        "2025-06-09 12:31:50": {
+            "cuenta": false,
+            "nocuenta": false,
+            "descripcion": ""
+        }
+    },
+    "02GMOCGN B -01    115          KV": {
+        "2025-05-01 00:00:00": {
+            "cuenta": true,
+            "nocuenta": false,
+            "descripcion": "Error de medición."
+        },
+        "2025-05-02 00:00:00": {
+            "cuenta": true,
+            "nocuenta": false,
+            "descripcion": "Error de medición."
+        },
+        "2025-05-03 00:00:00": {
+            "cuenta": true,
+            "nocuenta": false,
+            "descripcion": "Error de medición."
+        },
+        "2025-05-04 00:00:00": {
+            "cuenta": true,
+            "nocuenta": false,
+            "descripcion": "Error de medición."
+        },
+        "2025-05-05 00:00:00": {
+            "cuenta": true,
+            "nocuenta": false,
+            "descripcion": "Error de medición."
+        },
+        "2025-05-06 00:00:00": {
+            "cuenta": true,
+            "nocuenta": false,
+            "descripcion": "Error de medición."
+        },
+        "2025-05-16 22:25:36": {
+            "cuenta": true,
+            "nocuenta": false,
+            "descripcion": "Falla en CGN 4020."
+        },
+        "2025-06-05 15:19:44": {
+            "cuenta": false,
+            "nocuenta": false,
+            "descripcion": ""
+        },
+        "2025-06-08 07:54:56": {
+            "cuenta": false,
+            "nocuenta": false,
+            "descripcion": ""
+        }
+    },
+    "02GMOITP B -01    115          KV": {
+        "2025-05-05 10:59:20": {
+            "cuenta": true,
+            "nocuenta": false,
+            "descripcion": "Coincide con disparo múltiple en la RNT de la GRTOC."
+        }
+    },
+    "02GMOQMD B -01    69           KV": {
+        "2025-05-06 09:05:12": {
+            "cuenta": true,
+            "nocuenta": false,
+            "descripcion": "Licencia en muerto programada 20250506-0082 al QMD AT3."
+        }
+    },
+    "02GMOYTP B -01    400          KV": {
+        "2025-05-06 14:59:06": {
+            "cuenta": true,
+            "nocuenta": false,
+            "descripcion": "Falsa medicion por problemas con servicios propios, llegó tambien alarma: YTP IN-52B SP ABIERTO, YTP IN-52C SP CERRADO."
+        }
+    },
+    "02GMOLAT B -01    115          KV": {
+        "2025-05-13 15:42:01": {
+            "cuenta": true,
+            "nocuenta": false,
+            "descripcion": "Falla en CUG 4030."
+        },
+        "2025-05-21 11:37:21": {
+            "cuenta": true,
+            "nocuenta": false,
+            "descripcion": "Disparo de LAT CP 01."
+        },
+        "2025-05-21 11:37:51": {
+            "cuenta": true,
+            "nocuenta": false,
+            "descripcion": "Disparo de LAT CP 01."
+        },
+        "2025-05-22 12:12:21": {
+            "cuenta": true,
+            "nocuenta": false,
+            "descripcion": "Falla en BAA 4025."
+        },
+        "2025-05-22 12:12:41": {
+            "cuenta": true,
+            "nocuenta": false,
+            "descripcion": "Falla en BAA 4025."
+        },
+        "2025-05-24 03:32:31": {
+            "cuenta": true,
+            "nocuenta": false,
+            "descripcion": "Falla en LAT 4120."
+        }
+    },
+    "02GMOPIC B -01    115          KV": {
+        "2025-05-23 11:39:40": {
+            "cuenta": true,
+            "nocuenta": false,
+            "descripcion": "Error de medición por licencia 20250523-0719 para PIC AT1 para \"CALIBRACIÓN DEL MULTIMEDIDOR DE ENERGÍA PIC 72010.\""
+        }
+    },
+    "02GMOOMT B -01    115          KV": {
+        "2025-05-23 20:30:24": {
+            "cuenta": true,
+            "nocuenta": false,
+            "descripcion": "Falla en OMT 4030."
+        },
+        "2025-05-26 20:06:08": {
+            "cuenta": true,
+            "nocuenta": false,
+            "descripcion": "Falla en OMT 4030."
+        },
+        "2025-06-05 15:19:44": {
+            "cuenta": false,
+            "nocuenta": false,
+            "descripcion": ""
+        },
+        "2025-06-08 07:54:56": {
+            "cuenta": false,
+            "nocuenta": false,
+            "descripcion": ""
+        }
+    },
+    "02GMOAZA B -01    115          KV": {
+        "2025-05-23 21:46:00": {
+            "cuenta": true,
+            "nocuenta": false,
+            "descripcion": "D\/C de LT CGN 73400 AZA."
+        },
+        "2025-06-04 01:47:40": {
+            "cuenta": false,
+            "nocuenta": false,
+            "descripcion": ""
+        },
+        "2025-06-05 15:19:40": {
+            "cuenta": false,
+            "nocuenta": false,
+            "descripcion": ""
+        },
+        "2025-06-05 18:57:15": {
+            "cuenta": false,
+            "nocuenta": false,
+            "descripcion": ""
+        }
+    },
+    "02GMOCGP B -01    115          KV": {
+        "2025-05-24 06:44:03": {
+            "cuenta": true,
+            "nocuenta": false,
+            "descripcion": "Falla en IGU 5255."
+        },
+        "2025-05-24 09:58:11": {
+            "cuenta": true,
+            "nocuenta": false,
+            "descripcion": "Falla en CCS 4040."
+        },
+        "2025-06-01 15:42:29": {
+            "cuenta": false,
+            "nocuenta": true,
+            "descripcion": ""
+        },
+        "2025-06-10 06:18:49": {
+            "cuenta": false,
+            "nocuenta": true,
+            "descripcion": ""
+        },
+        "2025-06-10 14:53:04": {
+            "cuenta": false,
+            "nocuenta": true,
+            "descripcion": ""
+        },
+        "2025-06-10 14:53:21": {
+            "cuenta": false,
+            "nocuenta": true,
+            "descripcion": ""
+        },
+        "2025-06-10 14:56:44": {
+            "cuenta": false,
+            "nocuenta": true,
+            "descripcion": ""
+        }
+    },
+    "02GMOLAT B -01    230          KV": {
+        "2025-06-05 00:09:31": {
+            "cuenta": false,
+            "nocuenta": true,
+            "descripcion": ""
+        }
+    },
+    "02GMOCGP B -01    230          KV": {
+        "2025-06-07 12:34:27": {
+            "cuenta": false,
+            "nocuenta": true,
+            "descripcion": ""
+        }
+    },
+    "02GMOCUM LT-93300 YTP          KV": {
+        "2025-06-04 11:21:28": {
+            "cuenta": false,
+            "nocuenta": true,
+            "descripcion": ""
+        }
+    }
+}
